@@ -1,0 +1,22 @@
+{
+  "Teachers": [
+    {
+      "TeachersName": "Shivsai Bhosle",
+      "Description": "Kannada ",
+      "Designation": "Principal",
+      "Image": "assets/logo_flowcus.png",
+      "mobileNumber": "9019857809",
+      "WhatsAppNumber": "9019857809",
+      "email": "bhosleshiv143@gmail.com"
+    },
+    {
+      "TeachersName": "Dilip Bhosle",
+      "Description": "Kannada ",
+      "Designation": "Principal",
+      "Image": "assets/logo_flowcus.png",
+      "mobileNumber": "9342426850",
+      "WhatsAppNumber": "9342426850",
+      "email": "bhosleshiv143@gmail.com"
+    }
+  ]
+}

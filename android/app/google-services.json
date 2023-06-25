@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "636506561819",
+    "project_id": "flowcus-6b16e",
+    "storage_bucket": "flowcus-6b16e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:636506561819:android:15137e2fe4852e34c2c7be",
+        "android_client_info": {
+          "package_name": "com.example.uidesginpage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "636506561819-b37e9v8vs9mr0rhdkn76riqjpfr5otuq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCy7CdXrZeiw6jm7zZULF456xhIYepChOk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "636506561819-b37e9v8vs9mr0rhdkn76riqjpfr5otuq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
