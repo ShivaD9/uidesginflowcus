@@ -24,7 +24,7 @@ class _LoginScreenState extends State<LoginScreen> {
       await FirebaseServices().signInWithGoogle();
       _btnController.success();
       Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context) => const MyHomePage()));
+          context, MaterialPageRoute(builder: (context) => const LoginScreen()));
     } catch (e) {
       _btnController.error();
       ScaffoldMessenger.of(context).showSnackBar(

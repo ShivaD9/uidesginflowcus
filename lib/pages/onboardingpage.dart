@@ -91,7 +91,7 @@ class _onBoardingScreenState extends State<onBoardingScreen> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const LoginScreen()),
+                                builder: (context) => const MyHomePage()),
                           );
                         } else {
                           _controller.nextPage(

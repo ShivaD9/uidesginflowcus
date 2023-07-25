@@ -52,13 +52,13 @@ class MyApp extends StatelessWidget {
           builder: (context, AsyncSnapshot<ConnectivityResult> snapshot) {
             if (snapshot.connectionState == ConnectionState.done) {
               if (snapshot.data == ConnectivityResult.none) {
-                return Scaffold(
+                return const Scaffold(
                   body: Center(
                     child: Text('No internet connection'),
                   ),
                 );
               } else {
-                return MyProfilePage();
+                return SplashScreen();
               }
             } else {
               return const Scaffold(

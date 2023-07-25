@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:uidesginpage/pages/screens/contactpage.dart';
+import 'package:uidesginpage/pages/screens/eventsnotificationpage.dart';
 import 'package:uidesginpage/pages/screens/profilepage.dart';
 import 'package:uidesginpage/pages/screens/settingpage.dart';
 import '../constants/constants.dart';
@@ -24,12 +25,12 @@ class _MyHomePageState extends State<MyHomePage> {
     if (pageName == 'Assignments') {
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => const LoggedIn()),
+        MaterialPageRoute(builder: (context) => AnalyticsPage()),
       );
     } else if (pageName == 'Attendence') {
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) =>   ContactPage()),
+        MaterialPageRoute(builder: (context) =>   AnalyticsPage()),
       );
     } else if (pageName == 'teachers \n Contact') {
       Navigator.push(
@@ -42,10 +43,28 @@ class _MyHomePageState extends State<MyHomePage> {
         context,
         MaterialPageRoute(builder: (context) =>  const SettingsScreen()),
       );
-    } else if (pageName == 'profile') {
+    }
+    else if (pageName == 'School Fees') {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) =>  AnalyticsPage()),
+      );
+    }
+    else if (pageName == 'Events') {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) =>  const HomePage()),
+      );
+    }
+    else if (pageName == 'profile') {
       Navigator.push(
         context,
         MaterialPageRoute(builder: (context) =>   MyProfilePage()),
+      );
+    }else if (pageName == 'class videos') {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) =>   YoutubePlayerDemoApp()),
       );
     }
     // Add more conditions for other pages
@@ -190,6 +209,8 @@ class VideosPage extends StatelessWidget {
   }
 }
 
+
+
 class AnalyticsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -197,12 +218,27 @@ class AnalyticsPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Analytics'),
       ),
-      body: const Center(
-        child: Text('Analytics Page'),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset(
+              'assets/progress.png', // Replace with your image asset path
+              width: 200,
+              height: 200,
+            ),
+            const SizedBox(height: 20),
+            const Text(
+              'Analytics Page',
+              style: TextStyle(fontSize: 24),
+            ),
+          ],
+        ),
       ),
     );
   }
 }
+
 
 
 
